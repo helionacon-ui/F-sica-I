@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T11 Primer y segundo principio de la termodinámica · Física I · Guía para aprobar</title>
+<meta name="description" content="Física I (UPCT, GIEyA): tema 11, Primer y segundo principio de la termodinámica">
+<meta name="theme-color" content="#b4232f">
+<link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="hub-bar" style="max-width:1180px;margin:0 auto;padding:10px 16px 0"><a href="https://helionacon-ui.github.io/GIEIA-UPCT/" style="display:inline-flex;align-items:center;gap:6px;font:600 13.5px/1 system-ui,sans-serif;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);text-decoration:none">← Todas las guías GIEyA</a><p class="fecha" style="margin:6px 0 0;max-width:none;font:13px/1.45 system-ui,sans-serif;color:var(--muted)">Proyecto iniciado el <time datetime="2026-11-14">14 de noviembre de 2026</time></p></div>
+<div class="crumb"><a href="index.html">Física I</a><span class="sep">›</span><span>Parcial 2</span><span class="sep">›</span><span>T11 · Primer y segundo principio de la termodinámica</span></div><a href="#top" class="totop" id="totop" aria-label="Volver arriba">↑</a>
+<div class="wrap" id="top">
+<nav aria-label="Índice" class="toc"><a href="index.html" style="--tc:var(--c0)">Portada</a><div class="grp">Empezar</div><a href="index.html#cero" style="--tc:var(--c0)">Empieza aquí desde cero</a><a href="plan.html" style="--tc:var(--c0)">Cómo es la evaluación</a><a href="index.html#progreso" style="--tc:var(--c0)">Tu progreso</a><div class="grp">Parcial 1</div><a href="tema-01.html" style="--tc:var(--c2)">T1 Magnitudes, unidades y vectores</a><a href="tema-02.html" style="--tc:var(--c3)">T2 Cinemática y movimiento relativo</a><a href="tema-03.html" style="--tc:var(--c4)">T3 Dinámica, fuerzas de inercia y gravitación</a><a href="tema-04.html" style="--tc:var(--c5)">T4 Trabajo y energía</a><a href="tema-05.html" style="--tc:var(--c6)">T5 Movimiento oscilatorio</a><div class="grp">Parcial 2</div><a href="tema-06.html" style="--tc:var(--c7)">T6 Sistemas de partículas</a><a href="tema-07.html" style="--tc:var(--c8)">T7 Dinámica y estática del sólido rígido</a><a href="tema-08.html" style="--tc:var(--c1)">T8 Estática del sólido rígido</a><a href="tema-09.html" style="--tc:var(--c2)">T9 Estática de fluidos</a><a href="tema-10.html" style="--tc:var(--c3)">T10 Equilibrio termodinámico y temperatura</a><a href="tema-11.html" style="--tc:var(--c4)" class="on" aria-current="page">T11 Primer y segundo principio de la termodinámica</a><div class="grp">Practicar</div><a href="laboratorio.html" style="--tc:var(--c7)">Laboratorio y prácticas</a><a href="formulario.html" style="--tc:var(--c8)">Formulario</a></nav>
+<main>
+<section class="sec tema" style="--tc:var(--c4);--tcs:var(--c4s)">
+<div class="sh"><span aria-hidden="true" class="badge">11</span><div class="shx"><p class="kick">Parcial 2 · Tema 11</p><h2 id="t11">Primer y segundo principio de la termodinámica</h2><div class="tags"><span class="tag">Parcial 2</span><span class="tag">Problemas</span></div></div></div>
+<div class="zero"><p class="ft">Desde cero</p><p><b>Objetivo:</b> Aplicar el primer principio a procesos del gas ideal, calcular rendimientos y usar la entropía.</p><p class="aviso"><strong>Nota:</strong> como el tema 10, esta unidad sigue la bibliografía estándar y no el texto de los apuntes del curso. Verifícala con tus apuntes.</p>
+<p>Convención: \(W\) es el trabajo realizado <em>por</em> el sistema. El primer principio dice que la energía interna cambia por calor recibido menos trabajo realizado.</p></div>
+<details class="nom"><summary><span aria-hidden="true" class="nom-ic">Aa</span>Nomenclatura del tema 11 <span class="src">7 símbolos</span></summary><div class="inner">
+<div class="tw"><table><tr><th>Símbolo</th><th>Qué significa</th><th>Unidades · ejemplo</th></tr><tr><td class="sym">\(U\)</td><td>Energía interna</td><td class="u">J</td></tr><tr><td class="sym">\(Q\)</td><td>Calor recibido por el sistema</td><td class="u">J</td></tr><tr><td class="sym">\(W\)</td><td>Trabajo hecho por el sistema</td><td class="u">J</td></tr><tr><td class="sym">\(C_v,C_p\)</td><td>Calores molares</td><td class="u">J/(mol·K)</td></tr><tr><td class="sym">\(\gamma\)</td><td>Índice adiabático \(C_p/C_v\)</td><td class="u">sin dimensiones</td></tr><tr><td class="sym">\(\eta\)</td><td>Rendimiento</td><td class="u">0 a 1</td></tr><tr><td class="sym">\(S\)</td><td>Entropía</td><td class="u">J/K</td></tr></table></div></div></details>
+<figure class="fig"><p class="ft">Simulador · diagrama p-V y primer principio</p><div data-sim="pv"></div><figcaption>Mueve los controles y observa cómo cambian las magnitudes del recuadro.</figcaption></figure>
+<h3 id="t11-formulas">Lo que tienes que saber</h3>
+<div class="box key"><ul>
+<li>Primer principio: \(\Delta U=Q-W\); trabajo de expansión \(W=\int p\,dV\).</li>
+<li>Gas ideal: \(\Delta U=nC_v\Delta T\); \(C_p=C_v+R\); \(\gamma=C_p/C_v\) (\(\gamma=5/3\) monoatómico, \(7/5\) diatómico).</li>
+<li>Isócora: \(W=0\). Isobara: \(W=p\Delta V\). Isoterma: \(\Delta U=0\), \(W=nRT\ln(V_2/V_1)\). Adiabática: \(Q=0\), \(pV^\gamma=\text{cte}\).</li>
+<li>Rendimiento de una máquina térmica: \(\eta=W/Q_h=1-Q_c/Q_h\). Máquina de Carnot: \(\eta=1-T_c/T_h\).</li>
+<li>Entropía: \(\Delta S=\int dQ_{rev}/T\); en un sistema aislado \(\Delta S\ge0\).</li></ul></div>
+<h3 id="t11-metodo">Cómo se resuelve</h3>
+<ol class="steps"><li>Identifica el tipo de proceso y qué variable es constante.</li><li>Aplica \(\Delta U=nC_v\Delta T\) y luego \(Q=\Delta U+W\).</li><li>Para máquinas, comprueba que \(\eta\le\eta_{Carnot}\).</li></ol>
+<div class="box trap"><h4>Trampas típicas</h4><ul><li>Cambiar la convención de signos del trabajo a mitad del problema.</li><li>Usar \(C_p\) en un proceso a volumen constante.</li></ul></div>
+<h3 id="t11-problema">Problema tipo</h3>
+<div class="prob"><div class="enun"><p class="et">Enunciado</p><p>1 mol de gas ideal monoatómico se expande isobáricamente a 1 atm (101 325 Pa) de 0,02 m³ a 0,04 m³. Calcula W, \(\Delta U\) y Q. Y una máquina de Carnot trabaja entre 500 K y 300 K: ¿cuál es su rendimiento?</p></div>
+<details class="paso"><summary><span class="pn">✓</span>Ver solución paso a paso</summary><div class="inner"><p>\(W=p\Delta V=101\,325\cdot0{,}02\approx2027\) J. \(\Delta T=W/(nR)\approx244\) K; \(\Delta U=\tfrac32\cdot8{,}314\cdot244\approx3040\) J. \(Q=\Delta U+W\approx5066\) J.</p>
+<p>Carnot: \(\eta=1-300/500=0{,}40\).</p></div></details></div>
+<h3 id="t11-auto">Autoevaluación</h3>
+<p class="muted">Responde antes de desplegar.</p><details class="paso"><summary><span class="pn">1</span>En una isoterma de gas ideal, ¿cuánto vale \(\Delta U\)?</summary><div class="inner"><p>Cero.</p></div></details><details class="paso"><summary><span class="pn">2</span>¿Qué enunciado expresa el segundo principio en términos de entropía?</summary><div class="inner"><p>En un sistema aislado la entropía no disminuye, \(\Delta S\ge0\).</p></div></details>
+</section>
+<nav class="pager" aria-label="Páginas"><a href="tema-10.html"><small>← Anterior</small>T10 · Equilibrio termodinámico y temperatura</a><a class="nx" href="laboratorio.html"><small>Siguiente →</small>Laboratorio y prácticas</a></nav>
+<p class="inicio" style="margin:36px 0 8px;text-align:center;font-size:13px;color:var(--muted)">Guía no oficial de Física I (UPCT, GIEyA) · Proyecto iniciado el <time datetime="2026-11-14">14 de noviembre de 2026</time></p>
+</main>
+</div>
+<script src="app.js"></script>
+<script src="sims.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T2 Cinemática y movimiento relativo · Física I · Guía para aprobar</title>
+<meta name="description" content="Física I (UPCT, GIEyA): tema 2, Cinemática y movimiento relativo">
+<meta name="theme-color" content="#b4232f">
+<link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="hub-bar" style="max-width:1180px;margin:0 auto;padding:10px 16px 0"><a href="https://helionacon-ui.github.io/GIEIA-UPCT/" style="display:inline-flex;align-items:center;gap:6px;font:600 13.5px/1 system-ui,sans-serif;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);text-decoration:none">← Todas las guías GIEyA</a><p class="fecha" style="margin:6px 0 0;max-width:none;font:13px/1.45 system-ui,sans-serif;color:var(--muted)">Proyecto iniciado el <time datetime="2026-11-14">14 de noviembre de 2026</time></p></div>
+<div class="crumb"><a href="index.html">Física I</a><span class="sep">›</span><span>Parcial 1</span><span class="sep">›</span><span>T2 · Cinemática y movimiento relativo</span></div><a href="#top" class="totop" id="totop" aria-label="Volver arriba">↑</a>
+<div class="wrap" id="top">
+<nav aria-label="Índice" class="toc"><a href="index.html" style="--tc:var(--c0)">Portada</a><div class="grp">Empezar</div><a href="index.html#cero" style="--tc:var(--c0)">Empieza aquí desde cero</a><a href="plan.html" style="--tc:var(--c0)">Cómo es la evaluación</a><a href="index.html#progreso" style="--tc:var(--c0)">Tu progreso</a><div class="grp">Parcial 1</div><a href="tema-01.html" style="--tc:var(--c2)">T1 Magnitudes, unidades y vectores</a><a href="tema-02.html" style="--tc:var(--c3)" class="on" aria-current="page">T2 Cinemática y movimiento relativo</a><a href="tema-03.html" style="--tc:var(--c4)">T3 Dinámica, fuerzas de inercia y gravitación</a><a href="tema-04.html" style="--tc:var(--c5)">T4 Trabajo y energía</a><a href="tema-05.html" style="--tc:var(--c6)">T5 Movimiento oscilatorio</a><div class="grp">Parcial 2</div><a href="tema-06.html" style="--tc:var(--c7)">T6 Sistemas de partículas</a><a href="tema-07.html" style="--tc:var(--c8)">T7 Dinámica y estática del sólido rígido</a><a href="tema-08.html" style="--tc:var(--c1)">T8 Estática del sólido rígido</a><a href="tema-09.html" style="--tc:var(--c2)">T9 Estática de fluidos</a><a href="tema-10.html" style="--tc:var(--c3)">T10 Equilibrio termodinámico y temperatura</a><a href="tema-11.html" style="--tc:var(--c4)">T11 Primer y segundo principio de la termodinámica</a><div class="grp">Practicar</div><a href="laboratorio.html" style="--tc:var(--c7)">Laboratorio y prácticas</a><a href="formulario.html" style="--tc:var(--c8)">Formulario</a></nav>
+<main>
+<section class="sec tema" style="--tc:var(--c3);--tcs:var(--c3s)">
+<div class="sh"><span aria-hidden="true" class="badge">2</span><div class="shx"><p class="kick">Parcial 1 · Tema 2</p><h2 id="t2">Cinemática y movimiento relativo</h2><div class="tags"><span class="tag">Parcial 1</span><span class="tag">Problemas</span></div></div></div>
+<div class="zero"><p class="ft">Desde cero</p><p><b>Objetivo:</b> Describir el movimiento con posición, velocidad y aceleración; usar componentes intrínsecas y resolver problemas de movimiento relativo.</p><p>Velocidad y aceleración son derivadas de la posición: \(\vec v=d\vec r/dt\), \(\vec a=d\vec v/dt\). Si la aceleración es constante, las ecuaciones del MRUA resuelven el problema.</p>
+<p>En trayectorias curvas, la aceleración tiene una componente tangencial (cambia el módulo de la velocidad) y otra normal (cambia la dirección).</p></div>
+<details class="nom"><summary><span aria-hidden="true" class="nom-ic">Aa</span>Nomenclatura del tema 2 <span class="src">6 símbolos</span></summary><div class="inner">
+<div class="tw"><table><tr><th>Símbolo</th><th>Qué significa</th><th>Unidades · ejemplo</th></tr><tr><td class="sym">\(\vec r,\vec v,\vec a\)</td><td>Posición, velocidad, aceleración</td><td class="u">m, m/s, m/s²</td></tr><tr><td class="sym">\(a_t,a_n\)</td><td>Componentes tangencial y normal</td><td class="u">m/s²</td></tr><tr><td class="sym">\(\rho\)</td><td>Radio de curvatura</td><td class="u">m</td></tr><tr><td class="sym">\(\omega,\alpha\)</td><td>Velocidad y aceleración angular</td><td class="u">rad/s, rad/s²</td></tr><tr><td class="sym">\(\vec v_{arr}\)</td><td>Velocidad de arrastre (del sistema móvil)</td><td class="u">m/s</td></tr><tr><td class="sym">\(\vec a_C\)</td><td>Aceleración de Coriolis</td><td class="u">\(2\vec\Omega\times\vec v_{rel}\)</td></tr></table></div></div></details>
+<figure class="fig"><p class="ft">Simulador · tiro parabólico y descomposición de la velocidad</p><div data-sim="tiro"></div><figcaption>Mueve los controles y observa cómo cambian las magnitudes del recuadro.</figcaption></figure>
+<h3 id="t2-formulas">Lo que tienes que saber</h3>
+<div class="box key"><ul>
+<li>MRUA: \(x=x_0+v_0t+\tfrac12at^2\), \(v=v_0+at\), \(v^2=v_0^2+2a\,\Delta x\).</li>
+<li>Componentes intrínsecas: \(a_t=dv/dt\), \(a_n=v^2/\rho\), \(|\vec a|=\sqrt{a_t^2+a_n^2}\).</li>
+<li>Movimiento circular de radio R: \(v=R\omega\), \(a_t=R\alpha\), \(a_n=R\omega^2\).</li>
+<li>Composición de velocidades: \(\vec v_{abs}=\vec v_{rel}+\vec v_{arr}\).</li>
+<li>Composición de aceleraciones (sistema que gira con \(\vec\Omega\) constante): \(\vec a_{abs}=\vec a_{rel}+\vec a_{arr}+\vec a_C\), con \(\vec a_C=2\,\vec\Omega\times\vec v_{rel}\).</li></ul></div>
+<h3 id="t2-metodo">Cómo se resuelve</h3>
+<ol class="steps"><li>Dibuja el sistema de referencia y define el sentido positivo.</li><li>Identifica si la aceleración es constante para usar el MRUA.</li><li>En movimiento relativo, identifica qué es móvil, qué es sistema móvil y qué es fijo.</li></ol>
+<div class="box trap"><h4>Trampas típicas</h4><ul><li>Mezclar velocidad media y velocidad instantánea.</li><li>Olvidar la aceleración de Coriolis en sistemas giratorios.</li><li>Usar signos inconsistentes en las ecuaciones de frenado.</li></ul></div>
+<h3 id="t2-problema">Problema tipo</h3>
+<div class="prob"><div class="enun"><p class="et">Enunciado</p><p>Un coche a 20 m/s frena uniformemente hasta parar en 5 s. Calcula la aceleración y la distancia recorrida. Y: un barco cruza un río de 100 m de ancho con velocidad 5 m/s perpendicular a la orilla, con una corriente de 3 m/s. ¿Cuánto tiempo tarda y cuánto se desvía?</p></div>
+<details class="paso"><summary><span class="pn">✓</span>Ver solución paso a paso</summary><div class="inner"><p>\(a=(0-20)/5=-4\,\text{m/s}^2\). \(\Delta x=v_0t+\tfrac12at^2=100-50=50\) m (también \(\Delta x=(0-400)/(2\cdot(-4))=50\) m).</p>
+<p>Barco: el tiempo lo fija la componente perpendicular, \(t=100/5=20\) s. La corriente desplaza el barco \(3\cdot20=60\) m aguas abajo.</p></div></details></div>
+<h3 id="t2-auto">Autoevaluación</h3>
+<p class="muted">Responde antes de desplegar.</p><details class="paso"><summary><span class="pn">1</span>Un movimiento tiene \(a_n=0\). ¿Qué tipo de trayectoria es?</summary><div class="inner"><p>Recta (no cambia la dirección de la velocidad).</p></div></details><details class="paso"><summary><span class="pn">2</span>En movimiento circular uniforme, ¿es constante la aceleración?</summary><div class="inner"><p>Su módulo sí, \(a=v^2/R\), pero su dirección cambia: apunta al centro.</p></div></details><details class="paso"><summary><span class="pn">3</span>¿Cuándo aparece la aceleración de Coriolis?</summary><div class="inner"><p>Cuando la velocidad relativa es no nula en un sistema que gira.</p></div></details>
+</section>
+<nav class="pager" aria-label="Páginas"><a href="tema-01.html"><small>← Anterior</small>T1 · Magnitudes, unidades y vectores</a><a class="nx" href="tema-03.html"><small>Siguiente →</small>T3 · Dinámica, fuerzas de inercia y gravitación</a></nav>
+<p class="inicio" style="margin:36px 0 8px;text-align:center;font-size:13px;color:var(--muted)">Guía no oficial de Física I (UPCT, GIEyA) · Proyecto iniciado el <time datetime="2026-11-14">14 de noviembre de 2026</time></p>
+</main>
+</div>
+<script src="app.js"></script>
+<script src="sims.js"></script>
+</body>
+</html>

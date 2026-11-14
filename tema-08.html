@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T8 Estática del sólido rígido · Física I · Guía para aprobar</title>
+<meta name="description" content="Física I (UPCT, GIEyA): tema 8, Estática del sólido rígido">
+<meta name="theme-color" content="#b4232f">
+<link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="hub-bar" style="max-width:1180px;margin:0 auto;padding:10px 16px 0"><a href="https://helionacon-ui.github.io/GIEIA-UPCT/" style="display:inline-flex;align-items:center;gap:6px;font:600 13.5px/1 system-ui,sans-serif;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);text-decoration:none">← Todas las guías GIEyA</a><p class="fecha" style="margin:6px 0 0;max-width:none;font:13px/1.45 system-ui,sans-serif;color:var(--muted)">Proyecto iniciado el <time datetime="2026-11-14">14 de noviembre de 2026</time></p></div>
+<div class="crumb"><a href="index.html">Física I</a><span class="sep">›</span><span>Parcial 2</span><span class="sep">›</span><span>T8 · Estática del sólido rígido</span></div><a href="#top" class="totop" id="totop" aria-label="Volver arriba">↑</a>
+<div class="wrap" id="top">
+<nav aria-label="Índice" class="toc"><a href="index.html" style="--tc:var(--c0)">Portada</a><div class="grp">Empezar</div><a href="index.html#cero" style="--tc:var(--c0)">Empieza aquí desde cero</a><a href="plan.html" style="--tc:var(--c0)">Cómo es la evaluación</a><a href="index.html#progreso" style="--tc:var(--c0)">Tu progreso</a><div class="grp">Parcial 1</div><a href="tema-01.html" style="--tc:var(--c2)">T1 Magnitudes, unidades y vectores</a><a href="tema-02.html" style="--tc:var(--c3)">T2 Cinemática y movimiento relativo</a><a href="tema-03.html" style="--tc:var(--c4)">T3 Dinámica, fuerzas de inercia y gravitación</a><a href="tema-04.html" style="--tc:var(--c5)">T4 Trabajo y energía</a><a href="tema-05.html" style="--tc:var(--c6)">T5 Movimiento oscilatorio</a><div class="grp">Parcial 2</div><a href="tema-06.html" style="--tc:var(--c7)">T6 Sistemas de partículas</a><a href="tema-07.html" style="--tc:var(--c8)">T7 Dinámica y estática del sólido rígido</a><a href="tema-08.html" style="--tc:var(--c1)" class="on" aria-current="page">T8 Estática del sólido rígido</a><a href="tema-09.html" style="--tc:var(--c2)">T9 Estática de fluidos</a><a href="tema-10.html" style="--tc:var(--c3)">T10 Equilibrio termodinámico y temperatura</a><a href="tema-11.html" style="--tc:var(--c4)">T11 Primer y segundo principio de la termodinámica</a><div class="grp">Practicar</div><a href="laboratorio.html" style="--tc:var(--c7)">Laboratorio y prácticas</a><a href="formulario.html" style="--tc:var(--c8)">Formulario</a></nav>
+<main>
+<section class="sec tema" style="--tc:var(--c1);--tcs:var(--c1s)">
+<div class="sh"><span aria-hidden="true" class="badge">8</span><div class="shx"><p class="kick">Parcial 2 · Tema 8</p><h2 id="t8">Estática del sólido rígido</h2><div class="tags"><span class="tag">Parcial 2</span><span class="tag">Problemas</span></div></div></div>
+<div class="zero"><p class="ft">Desde cero</p><p><b>Objetivo:</b> Calcular reacciones en apoyos y equilibrar sólidos sometidos a fuerzas y pares.</p><p>Un sólido en equilibrio cumple \(\sum\vec F=0\) y \(\sum\vec M=0\). Dibujar bien el diagrama de sólido libre resuelve la mitad del problema.</p></div>
+<details class="nom"><summary><span aria-hidden="true" class="nom-ic">Aa</span>Nomenclatura del tema 8 <span class="src">4 símbolos</span></summary><div class="inner">
+<div class="tw"><table><tr><th>Símbolo</th><th>Qué significa</th><th>Unidades · ejemplo</th></tr><tr><td class="sym">\(R_A,R_B\)</td><td>Reacciones en apoyos</td><td class="u">N</td></tr><tr><td class="sym">\(M\)</td><td>Momento de una fuerza o par</td><td class="u">N·m</td></tr><tr><td class="sym">\(d\)</td><td>Brazo del par</td><td class="u">m</td></tr><tr><td class="sym">\(\mu_e\)</td><td>Rozamiento estático</td><td class="u">sin dimensiones</td></tr></table></div></div></details>
+<figure class="fig"><p class="ft">Simulador · reacciones de una viga apoyada</p><div data-sim="viga"></div><figcaption>Mueve los controles y observa cómo cambian las magnitudes del recuadro.</figcaption></figure>
+<h3 id="t8-formulas">Lo que tienes que saber</h3>
+<div class="box key"><ul>
+<li>Ecuaciones: \(\sum F_x=0\), \(\sum F_y=0\), \(\sum M_O=0\) (en el plano).</li>
+<li>Par de fuerzas: momento \(M=Fd\), igual respecto a cualquier punto.</li>
+<li>Apoyos: rodillo (una reacción perpendicular), pasador (dos componentes), empotramiento (dos fuerzas y un momento).</li>
+<li>Rozamiento en equilibrio: \(F\le\mu_eN\). Puede haber vuelco antes que deslizamiento.</li></ul></div>
+<h3 id="t8-metodo">Cómo se resuelve</h3>
+<ol class="steps"><li>Dibuja el diagrama de sólido libre con todas las reacciones.</li><li>Elige un punto de momentos que elimine el mayor número de incógnitas.</li><li>Resuelve las ecuaciones y comprueba con un segundo punto.</li></ol>
+<div class="box trap"><h4>Trampas típicas</h4><ul><li>Dibujar reacciones que no corresponden al tipo de apoyo.</li><li>Tomar momentos respecto a un punto sin verificar el signo.</li></ul></div>
+<h3 id="t8-problema">Problema tipo</h3>
+<div class="prob"><div class="enun"><p class="et">Enunciado</p><p>Una barra horizontal de 4 m y 200 N de peso (uniforme) está apoyada en A (pasador, extremo izquierdo) y en B (rodillo, extremo derecho). Sobre ella actúa una carga vertical de 100 N a 1 m de A. Calcula las reacciones.</p></div>
+<details class="paso"><summary><span class="pn">✓</span>Ver solución paso a paso</summary><div class="inner"><p>Momentos respecto a A: \(R_B\cdot4=200\cdot2+100\cdot1=500\), luego \(R_B=125\) N. Fuerzas verticales: \(R_A=300-125=175\) N. Horizontal en A: 0.</p></div></details></div>
+<h3 id="t8-auto">Autoevaluación</h3>
+<p class="muted">Responde antes de desplegar.</p><details class="paso"><summary><span class="pn">1</span>¿Cuántas componentes de reacción tiene un pasador en el plano?</summary><div class="inner"><p>Dos (horizontal y vertical).</p></div></details><details class="paso"><summary><span class="pn">2</span>¿Cuánto vale el momento de un par de fuerzas respecto a cualquier punto?</summary><div class="inner"><p>Lo mismo: \(Fd\).</p></div></details>
+</section>
+<nav class="pager" aria-label="Páginas"><a href="tema-07.html"><small>← Anterior</small>T7 · Dinámica y estática del sólido rígido</a><a class="nx" href="tema-09.html"><small>Siguiente →</small>T9 · Estática de fluidos</a></nav>
+<p class="inicio" style="margin:36px 0 8px;text-align:center;font-size:13px;color:var(--muted)">Guía no oficial de Física I (UPCT, GIEyA) · Proyecto iniciado el <time datetime="2026-11-14">14 de noviembre de 2026</time></p>
+</main>
+</div>
+<script src="app.js"></script>
+<script src="sims.js"></script>
+</body>
+</html>
